@@ -1,0 +1,8 @@
+Exercise 5 - Question 1
+Sending and receiving are not equivalent because their tags are different. Thus, the receiver is not able to match the message which was sent and will wait forever or until the program is interrupted from outside. It shows that conditions for message matching have to be compatible for source, destination communicator, tag and datatype or count.
+
+Exercise 5 - Question 2
+The function MPI_Bsend is utilized instead of MPI_Send. The original variable "number" is maintained. A buffer is allocated with the help of MPI_Pack_size and MPI_BSEND_OVERHEAD to accommodate the three integer messages.
+
+Exercise 6
+The numerical outcome of Pi should remain almost the same for the same number of samples and deterministic random streams on each rank since the order of reception of partial counts will not influence the final integer count. However the order may be different and the execution time is expected to vary a little bit due to possible differences in communication schedules and synchronizations. MPI_ANY_SOURCE will make the receiver ready to receive a message from any source.

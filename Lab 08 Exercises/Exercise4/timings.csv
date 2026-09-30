@@ -1,0 +1,11 @@
+program,processes,time_sec
+SumMPI,1,0.00306962
+SumMPI,2,0.00162547
+SumMPI,4,0.0033469
+SumMPI,8,0.0039159
+SumMPI,16,0.00449413
+PiMonteCarlo,1,0.161971
+PiMonteCarlo,2,0.154759
+PiMonteCarlo,4,0.154504
+PiMonteCarlo,8,0.155769
+PiMonteCarlo,16,0.138942
